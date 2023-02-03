@@ -14,6 +14,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 @Configuration
 @ComponentScan
 public class HellobootApplication {
+
 	@Bean
 	public ServletWebServerFactory servletWebServerFactory() {
 		return new TomcatServletWebServerFactory();
