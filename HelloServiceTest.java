@@ -1,10 +1,12 @@
 package tobyspring.helloboot;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.json.BasicJsonTester;
 
-import static org.assertj.core.api.Assertions.*;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloServiceTest {
@@ -25,6 +27,5 @@ public class HelloServiceTest {
         String res = helloDecorator.sayHello("Test");
         //then
         assertThat(res).isEqualTo("*Test*");
-
     }
 }
