@@ -2,11 +2,8 @@ package tobyspring.helloboot;
 
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 
-import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.DispatcherServlet;
+import tobyspring.config.MySpringBootApplication;
 
 @MySpringBootApplication
 public class HellobootApplication {
