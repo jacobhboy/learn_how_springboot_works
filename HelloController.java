@@ -13,7 +13,7 @@ import java.util.Objects;
 
 @Controller
 @RestController
-public class HelloController implements ApplicationContextAware {
+public class HelloController {
     private final HelloService helloService;
     private final ApplicationContext applicationContext;
 
@@ -27,10 +27,5 @@ public class HelloController implements ApplicationContextAware {
     @GetMapping("/hello")
     public String hello(String name) {
         return helloService.sayHello(Objects.requireNonNull(name));
-    }
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("히히 " + applicationContext);
     }
 }
